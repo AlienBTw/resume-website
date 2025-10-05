@@ -1,23 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ahmed Louay Araour — Resume</title>
-<style>
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;margin:0}
-header{position:sticky;top:0;background:#111;color:#eee;border-bottom:1px solid #222}
-nav{max-width:960px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px}
-nav a{color:#9fd3ff;text-decoration:none;font-weight:600}
-.container{max-width:960px;margin:0 auto;padding:20px 16px}
-section{padding:16px 0;border-top:1px solid #eee}
-h1{margin:8px 0 0}
-.item{background:#f8f9fb;border:1px solid #e6e8f0;border-radius:10px;padding:12px;margin:8px 0}
-.meta{color:#666;font-size:13px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.chip{border:1px solid #e6e8f0;border-radius:999px;padding:6px 10px;background:#fff;color:#333;font-size:13px}
-footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Louay Araour — Resume</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+    nav a {
+      color: #a8d8ff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 24px 0;
+      border-top: 2px solid #e8ecf3;
+    }
+    section:first-child {
+      border-top: none;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.5em;
+      color: #2a5298;
+      font-weight: 700;
+    }
+    h2 {
+      margin: 0 0 16px 0;
+      font-size: 1.8em;
+      color: #1e3c72;
+      font-weight: 600;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+    p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.8;
+    }
+    .item {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border: 1px solid #d5dde8;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .item strong {
+      color: #1e3c72;
+      font-size: 1.1em;
+    }
+    .meta {
+      color: #666;
+      font-size: 14px;
+      font-style: italic;
+      margin-top: 6px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .chip {
+      border: 2px solid #667eea;
+      border-radius: 25px;
+      padding: 8px 16px;
+      background: #fff;
+      color: #1e3c72;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .chip:hover {
+      background: #667eea;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(102,126,234,0.4);
+    }
+    ul {
+      margin: 10px 0;
+      padding-left: 24px;
+    }
+    li {
+      margin: 8px 0;
+      color: #555;
+    }
+    footer {
+      border-top: 2px solid #e8ecf3;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      margin-top: 30px;
+      border-radius: 0 0 16px 16px;
+    }
+    footer a {
+      color: #a8d8ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -41,16 +175,14 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
       <span class="chip">Tunis, Tunisia</span>
       <a class="chip" href="tel:+21697980842">+216 97-980-842</a>
       <a class="chip" href="mailto:AhmedLouay.araour@esprit.tn">AhmedLouay.araour@esprit.tn</a>
-      <a class="chip" href="https://linkedin.com/in/ahmed-louay-araour" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="chip" href="https://www.linkedin.com/in/ahmed-louay-araour-a73727275/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="chip" href="https://github.com/AlienBTw" target="_blank" rel="noopener">GitHub</a>
     </div>
   </section>
-
   <section id="objective">
     <h2>Objective</h2>
     <p>Seeking a 6‑month PFE/internship in Deep Learning, Machine Learning, Computer Vision, or NLP. Eager to apply hands‑on experience in Applied AI, Retrieval‑Augmented Generation (RAG), LLM fine‑tuning, and distributed training on GPU clusters.</p>
   </section>
-
   <section id="education">
     <h2>Education</h2>
     <div class="item">
@@ -58,14 +190,12 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
       <div class="meta">2021 — Present</div>
     </div>
   </section>
-
   <section id="skills">
     <h2>Technical Skills</h2>
     <div class="item"><strong>AI/ML:</strong> PyTorch, Scikit‑learn, TensorFlow, NLP, LLMs, Computer Vision, MLOps, Spark</div>
     <div class="item"><strong>Software Engineering:</strong> Python, Flask, React, JavaScript, C, Java, Spring Boot, Symfony</div>
     <div class="item"><strong>DevOps & Data:</strong> Docker, Jenkins, Git, SQL, Hadoop, DevOps</div>
   </section>
-
   <section id="experience">
     <h2>Professional Experience</h2>
     <div class="item">
@@ -108,7 +238,6 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
       </ul>
     </div>
   </section>
-
   <section id="projects">
     <h2>Key Projects</h2>
     <div class="item"><strong>Intelligent News Agent — NLP, LLMs:</strong> Built an AI‑powered agent for filtering, summarization (e.g., T5), and semantic retrieval (FAISS).</div>
@@ -119,7 +248,6 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
     <div class="item"><strong>Laboratory Stock Tracker:</strong> C with Qt for real‑time inventory tracking.</div>
     <div class="item"><strong>2D Video Game:</strong> Built from scratch in C with SDL 1.2; mechanics, rendering, input.</div>
   </section>
-
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
@@ -129,12 +257,10 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
       <li>NVIDIA Applications of AI for Anomaly Detection (Ongoing)</li>
     </ul>
   </section>
-
   <section id="awards">
     <h2>Awards</h2>
     <p>5th Place — ESPRIT Bal des Projets (June 2023)</p>
   </section>
-
   <section id="achievements">
     <h2>Achievements</h2>
     <ul>
@@ -142,13 +268,16 @@ footer{border-top:1px solid #eee;padding:16px;text-align:center;color:#666}
       <li>Distributed training on GPU clusters for CV workloads.</li>
     </ul>
   </section>
-
   <section id="languages">
     <h2>Languages</h2>
     <p>Arabic (Native) · French (B2) · English (B2)</p>
   </section>
 </main>
-<footer>© <span id="y"></span> Ahmed Louay Araour — <a href="https://github.com/AlienBTw/resume-website" target="_blank" rel="noopener">GitHub Repo</a></footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<footer>
+  © <span id="y"></span> Ahmed Louay Araour — <a href="https://github.com/AlienBTw/resume-website" target="_blank" rel="noopener">GitHub Repo</a>
+</footer>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
